@@ -28,4 +28,21 @@ public class ClassNoteStackQ {
 			// Pop(e) is implemented as PopFront()
 		}
 	}
+	
+	private class ClassNoteQ {
+		// implement functions: enqueue, dequeue,
+		// if implemented by linked list
+		//	Enqueue(e) = PushEnd(e)
+		// Dequeue() = PopFront()
+		
+		// if implemented by array. we want enqueue and dequeue is O(1)
+		//	use 2 variables: read and write to denote the first and last
+		//	index of the array
+		// read pointer points where dequeue should happen
+		// 	write pointer points where enqueue should happen
+		// we implement a circular buffer. however, once the write
+		// pointer wraps around, write pointer cannot be same as read
+		// pointer.
+		
+	}
 }
